@@ -27,7 +27,7 @@ int main() {
     float totalAverage = 0;
     int highestIndex = 0;
     
-    
+    // Instead of reading from input, use the hardcoded data
     // Student 1: Alice
     strcpy(students[0].name, "alice");
     float aliceScores[NUM_EXAMS] = {8, 9, 7, 6, 10, 9, 8, 7, 10, 10, 9, 10, 8};
