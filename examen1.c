@@ -13,27 +13,27 @@ struct Student {
 int main() {
     struct Student students[NUM_STUDENTS];
     
-    // Alice score results
+    // Initialize Alice's data
     strcpy(students[0].name, "Alice");
     int alice_scores[NUM_TESTS] = {8, 9, 7, 6, 10, 9, 8, 7, 10, 10, 9, 10, 8};
     memcpy(students[0].scores, alice_scores, sizeof(alice_scores));
 
-    // Bob score results
+    // Initialize Bob's data
     strcpy(students[1].name, "Bob");
     int bob_scores[NUM_TESTS] = {5, 5, 6, 4, 5, 6, 5, 5, 4, 6, 5, 5, 4};
     memcpy(students[1].scores, bob_scores, sizeof(bob_scores));
 
-    // Charlie score results
+    // Initialize Charlie's data
     strcpy(students[2].name, "Charlie");
     int charlie_scores[NUM_TESTS] = {10, 9, 9, 10, 10, 9, 9, 10, 9, 10, 10, 9, 10};
     memcpy(students[2].scores, charlie_scores, sizeof(charlie_scores));
 
-    // David score results
+    // Initialize David's data
     strcpy(students[3].name, "David");
     int david_scores[NUM_TESTS] = {4, 3, 5, 4, 4, 5, 4, 5, 4, 3, 5, 4, 4};
     memcpy(students[3].scores, david_scores, sizeof(david_scores));
 
-    // Eve score results
+    // Initialize Eve's data
     strcpy(students[4].name, "Eve");
     int eve_scores[NUM_TESTS] = {7, 6, 7, 8, 7, 6, 7, 7, 6, 7, 8, 7, 6};
     memcpy(students[4].scores, eve_scores, sizeof(eve_scores));
@@ -62,7 +62,7 @@ int main() {
     }
     total_average /= NUM_STUDENTS;
 
-    // Print student with highest average
+    // Print student with highest average first
     printf("%s\n", students[highest_index].name);
 
     // Print students below average in input order
