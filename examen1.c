@@ -10,7 +10,7 @@ struct Student {
     float average;
 };
 
-int main() {
+int main(){
     struct Student students[NUM_STUDENTS];
     
     // Alice score result
